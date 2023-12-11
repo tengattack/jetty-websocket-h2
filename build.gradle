@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.eclipse.jetty:jetty-alpn-server:10.0.18'
+    implementation 'org.eclipse.jetty:jetty-alpn-java-server:10.0.18'
+    implementation 'org.eclipse.jetty:jetty-server:10.0.18'
+    implementation 'org.eclipse.jetty.http2:http2-server:10.0.18'
+    implementation 'org.eclipse.jetty:jetty-servlets:10.0.18'
+    implementation 'org.eclipse.jetty:jetty-util:10.0.18'
+    implementation 'org.eclipse.jetty:jetty-io:10.0.18'
+    implementation 'org.eclipse.jetty:jetty-security:10.0.18'
+    implementation 'org.eclipse.jetty:jetty-slf4j-impl:10.0.18'
+    implementation 'org.eclipse.jetty.websocket:websocket-jetty-server:10.0.18'
+    implementation 'org.eclipse.jetty.websocket:websocket-javax-server:10.0.18'
+    implementation 'org.eclipse.jetty.websocket:websocket-servlet:10.0.18'
+}
+
+mainClassName = 'com.mycompany.WebSocketServer'
